@@ -30,6 +30,13 @@ body{
     gap: 82px;
 }
 
+.apresentacao__about {
+    padding: 3% 15%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
 .apresentacao__conteudo{
     width: 50%;
     display: flex;
@@ -47,6 +54,7 @@ body{
 }
 
 .apresentacao__conteudo__texto{
+    text-align: center;
     font-size: 1.5rem;
     font-family: var(--font-secundaria);
 }
@@ -81,6 +89,11 @@ body{
     font-family: var(--font-secundaria);
 }
 
+.link_alura {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
 .apresentacao__links__link:hover {
     background-color: var(--cor-hover);
 }
@@ -103,7 +116,7 @@ body{
     padding: 2% 0 0 15%;
 }
 
-.cabecalho__menu{
+.cabecalho__menu {
     display: flex;
     gap: 80px;
 }
@@ -114,7 +127,22 @@ body{
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
+    border: 2px solid var(--cor-terciaria);
+    padding: 5px 10px;
+    border-radius: 15px;
 }
+
+.cabecalho__menu__link a:hover {
+    color: red;
+    border: red;
+}
+
+.cabecalho a:hover{
+    color: var(--cor-terciaria);
+    border: red;
+}
+
+
 
 @media (max-width: 1200px) {
     .cabecalho {
